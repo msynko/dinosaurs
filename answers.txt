@@ -1,0 +1,132 @@
+ANSWERS:
+
+Exercise 1
+SELECT COUNT(name) FROM dinos;
+count
+-------
+  331
+(1 row)
+
+Exercise 2:
+SELECT name FROM dinos WHERE period = 'Jurassic';
+Yuanmousaurus
+Yinlong
+Yingshanosaurus
+Yimenosaurus
+Yangchuanosaurus
+Yandusaurus
+Vulcanodon
+Tuojiangosaurus
+Torvosaurus
+Yunnanosaurus
+Sinraptor
+Stegosaurus
+Seismosaurus
+Segisaurus
+Scutellosaurus
+Scelidosaurus
+Saurophaganax
+Sarcosaurus
+Shunosaurus
+Rhoetosaurus
+Poekilopleuron
+Podokesaurus
+Piatnitzkysaurus
+Proceratosaurus
+Patagosaurus
+Pantydraco
+Datousaurus
+Ornitholestes
+Omeisaurus
+Nqwebasaurus
+Monolophosaurus
+Othnielia
+Megalosaurus
+Massospondylus
+Marshosaurus
+Mamenchisaurus
+Lufengosaurus
+Lophostropheus
+Lexovisaurus
+Metriacanthosaurus
+Lesothosaurus
+Kentrosaurus
+Juravenator
+Jingshanosaurus
+Janenschia
+Huayangosaurus
+Heterodontosaurus
+Kotasaurus
+Guanlong
+Giraffatitan
+Gasosaurus
+Gargoyleosaurus
+Eustreptospondylus
+Europasaurus
+Haplocanthosaurus
+Emausaurus
+Euhelopus
+Elaphrosaurus
+Dubreuillosaurus
+Dryosaurus
+Diplodocus
+Dilophosaurus
+Dicraeosaurus
+Cryolophosaurus
+Compsognathus
+Coelurus
+Chungkingosaurus
+Chirostenotes
+Chinshakiangosaurus
+Chaoyangsaurus
+Dacentrurus
+Cetiosaurus
+Cetiosauriscus
+Ceratosaurus
+Chialingosaurus
+Brachytrachelopan
+Brachiosaurus
+Bellusaurus
+Barosaurus
+Barapasaurus
+Camarasaurus
+Anchisaurus
+Amygdalodon
+Ammosaurus
+Allosaurus
+Agilisaurus
+Apatosaurus
+Lapparentosaurus
+Hesperosaurus
+Camptosaurus
+Aardonyx
+Archaeopteryx
+(92 rows)
+
+Exercise #3
+
+SELECT SUM(length) FROM dinos WHERE period = 'Cretaceous';
+   sum
+---------
+ 1366.45
+(1 row)
+
+Exercise #4
+
+ELECT name FROM dinos WHERE period = 'Jurassic' OR period = 'Cretaceous' ORDER by name ASC;
+
+Exercise #5
+
+SELECT name FROM dinos WHERE t_order = 'Saurischia' AND diet = 'Herbivorous';
+
+(68 rows)
+
+Exercise #6
+SELECT MIN(length) FROM dinos;
+UPDATE dinos SET name = 'Shortie' WHERE length = 0.08;
+
+
+Exercise#7
+SELECT name FROM dinos ORDER BY name ASC;
+
+Aardonyx
